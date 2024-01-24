@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: hsla(228, 12%, 48%, 0.93);
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+
+}
+
+h1, .new-price {
+    font-family: 'Fraunces', serif;
+    color: black;
+}
+
+span {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+p {
+    line-height: 24px;
+
+}
+
+.card {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.preview {
+    min-width: 50%;
+    max-width: 50%;
+    height: 100%;
+    /* min-height: 100%; */
+}
+
+.preview > img {
+    height: 100%;
+    width: 100%;
+    /* max-height: auto; */
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.content {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.price {
+    display: flex;
+    align-items: start;
+    margin-top: 1rem;
+    
+}
+
+.price > p {
+    margin-top: 0;
+}
+
+.new-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+    margin-right: 1rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem 0.5rem;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button > img {
+    margin: 0 1rem;
+}
+
+@media screen {
+    .card {
+        flex-direction: column;
+        min-width: 90%;
+    }
+    .preview {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .preview > img {
+        height: 100%;
+        width: 100%;
+        /* max-height: auto; */
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+}
+
